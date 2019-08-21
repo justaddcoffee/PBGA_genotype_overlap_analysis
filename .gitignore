@@ -1,0 +1,7 @@
+activate_venv.sh
+env
+data/*
+annotated/*
+*.output*
+.ipynb_checkpoints/
+.idea/
