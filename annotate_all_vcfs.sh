@@ -2,8 +2,8 @@
 export jar="/Users/jtr4v/IdeaProjects/PBGA/pbga-cli/target/pbga-cli-0.0.1-SNAPSHOT.jar"
 export yaml="/Users/jtr4v/IdeaProjects/PBGA/pbga-cli/src/main/resources/application.justin.yml"
 export java_cmd="java -jar $jar --config $yaml annotate-sv "
-# for file in `ls -1 data/*vcf.gz | grep -v cloudSV.PBOnly.HG00512.012317.ILL.genotyped.vcf | grep -v cloudSV.PBOnly.HG00513.012317.ILL.genotyped.vcf`
-for file in `ls data/cloudSV.PBOnly.HG00512.012317.ILL.genotyped.vcf.gz data/cloudSV.PBOnly.HG00513.012317.ILL.genotyped.vcf.gz`
+for file in `ls -1 data/*vcf.gz`
+# for file in `ls data/cloudSV.PBOnly.HG00512.012317.ILL.genotyped.vcf.gz data/cloudSV.PBOnly.HG00513.012317.ILL.genotyped.vcf.gz`
 do
     echo ===
     echo analyzing $file
